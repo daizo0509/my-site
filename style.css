@@ -24,13 +24,15 @@ nav{
 	float: left;
 }
 .nav-list{
+	height: 70px;
 	text-align: right;
 	float: right;
+	line-height: 70px;
 }
 .nav-list-item{
 	font-size: 16px;
 	color: #FAFAFA;
-	margin: 27px 30px;
+	margin: 0 30px;
 	display: inline-block;
 }
 
@@ -38,6 +40,7 @@ nav{
 	height: 650px;
 	width: 100%;
 	background-image: url(img/mv.png);
+	background-size: cover;
 }
 .loremipsum{
 	font-size: 64px;
@@ -95,6 +98,7 @@ nav{
 .portfolio-image:nth-child(2){
 	background-image: url(img/websuku.png);
 	margin: 30px 10px 10px 10px;
+	background-position: center;
 }
 .portfolio-image:nth-child(3){
 	background-image: url(img/write.jpg);
@@ -102,6 +106,7 @@ nav{
 }
 .portfolio-image:nth-child(4){
 	background-image: url(img/webcamp.png);
+	background-position: center;
 }
 .portfolio-image:nth-child(5){
 	background-image: url(img/talk.jpg);
@@ -109,6 +114,7 @@ nav{
 }
 .portfolio-image:nth-child(6){
 	background-image: url(img/webcamp-mother.png);
+	background-position: center;
 }
 
 .feature{
@@ -122,11 +128,13 @@ nav{
 	font-size: 32px;
 	text-align: center;
 }
+
 .feature-text{
 	font-size: 16px;
 	color: #000000;
 	padding-top: 30px;
 	text-align: center;
+	margin-bottom: 30px;
 }
 .strength-box{
 	width: 980px;
@@ -223,6 +231,7 @@ nav{
 }
 .myname{
 	font-size:20px;
+	margin-bottom: 5px;
 }
 .myname-text{
 	font-size: 16px;
@@ -230,6 +239,7 @@ nav{
 .myskills{
 	font-size: 20px;
 	padding-top: 8px;
+	margin-bottom: 5px;
 }
 .myskills-text{
 	font-size: 16px;
@@ -240,16 +250,17 @@ nav{
 	float: left;
 }
 .contact-box{
-	height: 222px;
+	height: auto;
 	width: 800px;
 	margin: 0 auto;
 	padding-top: 30px;
 	margin-bottom: 90px;
 }
 .contact-box1{
-	height: 222px;
+	height: auto;
 	width: 400px;
 	float: left;
+	text-align: center;
 }
 .mail{
 	font-size: 20px;
@@ -263,9 +274,14 @@ nav{
 	margin-bottom: 5px;
 }
 .contact-box2{
-	height: 222px;
+	height: auto;
 	width: 400px;
 	float: left;
+	text-align: center;
+}
+.contact-box-inner{
+	display: inline-block;
+	text-align: left;
 }
 .SNS{
 	font-size: 20px;
@@ -280,17 +296,19 @@ footer{
 	width: 100%;
 	background-color: #EC715F;
 	float: left;
+	margin: 0 auto;
 }
 .footer-text{
+	height: 60px;
 	font-size: 16px;
 	color: #FAFAFA;
 	text-align: center;
-	padding: 22px 0;
+	line-height: 70px;
 }
 
 @media screen and (max-width: 425px){
 	header{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	nav {
@@ -307,7 +325,7 @@ footer{
 
 	}
     .hamberger{
-    	
+        
     	float:right;
     	display: inline-block;
         font-size: 44px;
@@ -316,10 +334,10 @@ footer{
     }
 
 	main{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
-	
+    
 	.main-visual{
 		width: 100%;
 		height: 750px;
@@ -337,19 +355,26 @@ footer{
 		color: #FAFAFA;
 	}
 	.contents-text{
-		width: 100%;
+		width: 90%;
 		padding-bottom: 30px;
 		margin: 0 auto;
 	}
 	
 	.portfolio{
+		width: 100%;
 		height: 1229px;
 		float: none;
 	}
+	.profile-title{
+		padding-top: 90px;
+	}
 	.portfolio-image-box{
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.portfolio-image:nth-child(odd){
+		width: 90%;
+		margin: 0 auto;
 	}
     .portfolio-image:nth-child(1){
 	    background-image: url(img/sketch.jpg);
@@ -362,7 +387,7 @@ footer{
 	    background-image: url(img/websuku.png);
 	    margin: 30px auto 0;
 	    height: 250px;
-	    width: 300px;
+        
 	    float: none;
 	    background-position: center;
     }
@@ -374,7 +399,7 @@ footer{
     .portfolio-image:nth-child(4){
 	    background-image: url(img/webcamp.png);
 	    height: 250px;
-	    width: 300px;
+        
 	    float: none;
 	    margin: 10px auto 10px;
 	    background-position: center;
@@ -387,18 +412,23 @@ footer{
     .portfolio-image:nth-child(6){
 	    background-image: url(img/webcamp-mother.png);
 	    height: 250px;
-	    width: 300px;
+        
 	    float: none;
 	    margin: 10px auto 90px;
 	    background-position: center;
     }
     
     .feature{
-    	height: 1409px;
+    	height: 1336px;
+
     	float: none;
     }
+    .feature-text{
+    	width: 90%;
+    	margin: 0 auto;
+    }
     .strength-box{
-    	width: 100%;
+    	width: 90%;
     }
     .strength1{
     	height: auto;
@@ -418,15 +448,14 @@ footer{
     	margin: 10px auto 90px;
     	padding: 0;
     }
-    
     .profile{
     	width: 100%;
-    	height: 1065px;
+    	height: 1079px;
     	float:none;
     }
-	.pprofile-title{
-		padding: 0;
-		margin: 90px 0 8px;
+	.profile-title{
+		padding-top: 90px;
+		margin-bottom: 8px;
 		display: 
 	}
 	.profile-box{
@@ -457,9 +486,10 @@ footer{
 		margin:20px 0 5px;
 	}
 	.myskills-text{
-		margin-bottom: 90px;
+		padding-bottom: 90px;
 		text-align: center;
 	}
+    
 
 	.contact{
 		height: 746px;
@@ -472,11 +502,14 @@ footer{
 	}
 
 	.contact-box1{
-		margin: 30px 0 20px;
+		margin: 30px auto 20px;
 		height: 152px;
 		text-align: center;
 	}
 
+	.contact-box-inner{
+		text-align: center;
+	}
     .contact-box2{
     	height: 165px;
     	text-align: center;
@@ -484,10 +517,12 @@ footer{
     }
     .contact-box2 i{
     	margin-right: 8px;
-    }
+    } 
 	footer{
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
+		line-height: 22px;
 		float: none;
 	}
 }
+  
